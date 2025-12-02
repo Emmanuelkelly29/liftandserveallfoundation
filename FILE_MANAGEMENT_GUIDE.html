@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Management Guide - Lift and Serve All Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .file-list {
+            background: #001F54;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        .highlight {
+            background: #FFD700;
+            color: #001F54;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .code {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        .logo-img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav.navbar {
+            background-color: #001F54;
+            padding: 10px 0;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+        .nav-logo img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-item {
+            margin: 0 15px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 3px 0;
+            transition: 0.4s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #001F54;
+            }
+            .nav-item {
+                margin: 10px 0;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Lift and Serve All Foundation Logo" class="logo-img">
+                </a>
+                <span>Lift and Serve All Foundation</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs & Impact</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>📁 File Management Guide</h1>
+        <p>Learn how to properly manage and edit your website files.</p>
+
+        <div class="warning">
+            <strong>⚠️ Problem:</strong> HTML files are opening in browser instead of allowing you to edit them.
+        </div>
+
+        <div class="step">
+            <h2>🔧 Solution 1: Right-Click Method (Recommended)</h2>
+            <ol>
+                <li><strong>Right-click</strong> on any HTML file (like <span class="highlight">index.html</span>)</li>
+                <li>Select <strong>"Open with"</strong> → <strong>"Choose another app"</strong></li>
+                <li>Select <strong>"Notepad"</strong> or <strong>"Notepad++"</strong></li>
+                <li>Check <strong>"Always use this app to open .html files"</strong></li>
+                <li>Click <strong>OK</strong></li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>🔧 Solution 2: File Explorer Method</h2>
+            <ol>
+                <li>Open <strong>File Explorer</strong> (Windows key + E)</li>
+                <li>Navigate to: <code>C:\Users\USER\Desktop\liftandserveallfoundation</code></li>
+                <li><strong>Right-click</strong> on any HTML file</li>
+                <li>Select <strong>"Open with"</strong> → <strong>"Notepad"</strong></li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>📂 Your Website File Structure</h2>
+            <p>Here's what you should see in your folder:</p>
+            
+            <div class="file-list">
+📁 liftandserveallfoundation<br>
+├── 📄 index.html<br>
+├── 📄 about.html<br>
+├── 📄 programs.html<br>
+├── 📄 involved.html<br>
+├── 📄 partners.html<br>
+├── 📄 donate.html<br>
+├── 📄 news.html<br>
+├── 📄 contact.html<br>
+├── 📄 faqs.html<br>
+├── 📄 styles.css<br>
+├── 📄 script.js<br>
+├── 📄 LOGO_PLACEMENT_GUIDE.html<br>
+└── <span class="highlight">🖼️ logo.png</span> ← Add your logo here
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>✏️ How to Edit Files</h2>
+            <h3>To Edit HTML Files:</h3>
+            <ol>
+                <li>Right-click on the HTML file you want to edit</li>
+                <li>Select "Open with" → "Notepad"</li>
+                <li>Make your changes</li>
+                <li>Press <strong>Ctrl + S</strong> to save</li>
+                <li>Close Notepad</li>
+            </ol>
+
+            <h3>To Edit CSS File:</h3>
+            <ol>
+                <li>Right-click on <span class="highlight">styles.css</span></li>
+                <li>Select "Open with" → "Notepad"</li>
+                <li>Make your changes</li>
+                <li>Press <strong>Ctrl + S</strong> to save</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>🌐 How to View Your Website</h2>
+            <h3>To Open in Browser:</h3>
+            <ol>
+                <li>Double-click on <span class="highlight">index.html</span></li>
+                <li>Or right-click → "Open with" → "Your preferred browser"</li>
+            </ol>
+
+            <h3>To Edit and View:</h3>
+            <ol>
+                <li>Edit the file in Notepad</li>
+                <li>Save changes (Ctrl + S)</li>
+                <li>Refresh the browser page (F5)</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>🖼️ Adding Your Logo</h2>
+            <ol>
+                <li>Save your logo as <span class="highlight">logo.png</span></li>
+                <li>Place it in the same folder as your HTML files</li>
+                <li>Refresh your browser to see the logo</li>
+            </ol>
+        </div>
+
+        <div class="success">
+            <h3>✅ Quick Tips:</h3>
+            <ul>
+                <li><strong>Always save</strong> after making changes (Ctrl + S)</li>
+                <li><strong>Refresh browser</strong> to see changes (F5)</li>
+                <li><strong>Keep backup copies</strong> of your files</li>
+                <li><strong>Use Notepad++</strong> for better editing experience (free download)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h2>🚀 Recommended Text Editors</h2>
+            <p>For better editing experience, consider downloading:</p>
+            <ul>
+                <li><strong>Notepad++</strong> (Free) - Better syntax highlighting</li>
+                <li><strong>Visual Studio Code</strong> (Free) - Professional editor</li>
+                <li><strong>Sublime Text</strong> (Free trial) - Lightweight and fast</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+});
+</script>
+</body>
+</html>
+

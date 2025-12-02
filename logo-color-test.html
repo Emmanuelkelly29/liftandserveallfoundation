@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo & Color Test - Lift and Serve All Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+        }
+        .color-test {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .navy-blue {
+            background-color: #001F54;
+        }
+        .gold {
+            background-color: #FFD700;
+            color: #001F54;
+        }
+        .logo-test {
+            background: #001F54;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .logo-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .logo-placeholder {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px dashed rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .navbar {
+            background-color: #001F54;
+            padding: 10px 20px;
+            color: white;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .nav-item {
+            position: relative;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s;
+        }
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .bar {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin: 3px 0;
+            transition: all 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: #001F54;
+                border-radius: 8px;
+                padding: 10px;
+                width: 200px;
+            }
+            .nav-item {
+                width: 100%;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Lift and Serve All Foundation Logo" class="logo-img">
+                </a>
+                <span>Lift and Serve All Foundation</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs & Impact</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>🔍 Logo & Color Test Page</h1>
+        <p>This page will help you test if your logo and colors are working correctly.</p>
+
+        <div class="test-section">
+            <h2>🎨 Color Test</h2>
+            <p>Your website should use these colors:</p>
+            <div class="color-test">
+                <div class="color-box navy-blue">
+                    Navy Blue<br>#001F54
+                </div>
+                <div class="color-box gold">
+                    Gold<br>#FFD700
+                </div>
+            </div>
+            <p><strong>If these colors look correct, your color scheme is working!</strong></p>
+        </div>
+
+        <div class="test-section">
+            <h2>🖼️ Logo Test</h2>
+            <p>Testing if your logo file is accessible:</p>
+            
+            <div class="logo-test">
+                <h3>Navigation Logo Test</h3>
+                <div class="logo-display">
+                    <img src="logo.jpg" alt="Logo Test" style="height: 40px; width: auto; margin-right: 10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder" style="display: none;">
+                        ❌ Logo not found
+                    </div>
+                    <span style="font-size: 1.5rem; font-weight: bold;">Lift and Serve All Foundation</span>
+                </div>
+            </div>
+
+            <div class="logo-test">
+                <h3>Footer Logo Test</h3>
+                <div class="logo-display">
+                    <img src="logo.jpg" alt="Logo Test" style="height: 30px; width: auto; margin-right: 10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder" style="display: none;">
+                        ❌ Logo not found
+                    </div>
+                    <span style="font-size: 1.2rem; font-weight: bold;">Lift and Serve All Foundation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>📋 Troubleshooting Steps</h2>
+            
+            <h3>If Logo is NOT showing:</h3>
+            <ol>
+                <li><strong>Check file name:</strong> Make sure it's exactly <code>logo.png</code> (not Logo.png or logo.PNG)</li>
+                <li><strong>Check file location:</strong> Make sure logo.png is in the same folder as index.html</li>
+                <li><strong>Check file format:</strong> Make sure it's a PNG file</li>
+                <li><strong>Refresh browser:</strong> Press F5 or Ctrl+F5 to refresh</li>
+                <li><strong>Clear browser cache:</strong> Press Ctrl+Shift+Delete and clear cache</li>
+            </ol>
+
+            <h3>If Colors look wrong:</h3>
+            <ol>
+                <li><strong>Check styles.css:</strong> Make sure the file is in the same folder</li>
+                <li><strong>Refresh browser:</strong> Press F5 to reload styles</li>
+                <li><strong>Check file permissions:</strong> Make sure you can read the CSS file</li>
+            </ol>
+        </div>
+
+        <div class="test-section">
+            <h2>✅ Quick Fixes</h2>
+            
+            <div class="success">
+                <h3>For Logo Issues:</h3>
+                <p>1. Right-click on logo.png → "Open with" → "Paint" or any image editor</p>
+                <p>2. Save As → Choose PNG format → Save as "logo.png"</p>
+                <p>3. Make sure it's in the same folder as your HTML files</p>
+            </div>
+
+            <div class="success">
+                <h3>For Color Issues:</h3>
+                <p>1. Open styles.css in Notepad</p>
+                <p>2. Look for the color variables at the top</p>
+                <p>3. Make sure they show: --primary-color: #001F54; and --secondary-color: #FFD700;</p>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>🌐 Test Your Main Website</h2>
+            <p>After checking this test page, open your main website:</p>
+            <ol>
+                <li>Double-click on <strong>index.html</strong></li>
+                <li>Check the top-left corner for your logo</li>
+                <li>Scroll down to the footer to see logo there too</li>
+                <li>Look for navy blue and gold colors throughout</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Add this before </body> in your HTML files -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    });
+    </script>
+</body>
+</html>
+

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs - Learn For All Foundation</title>
-    <meta name="description" content="Find answers to frequently asked questions about Learn For All Foundation's programs, donations, volunteering, and more.">
+    <title>FAQs - Lift and Serve All Foundation</title>
+    <meta name="description" content="Find answers to frequently asked questions about Lift and Serve All Foundation's programs, donations, volunteering, and more.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,34 +14,20 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-book"></i>
-                <span>Learn For All Foundation</span>
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Lift and Serve All Foundation Logo" class="logo-img">
+                </a>
+                <span>Lift and Serve All Foundation</span>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="programs.html" class="nav-link">Programs & Impact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="involved.html" class="nav-link">Get Involved</a>
-                </li>
-                <li class="nav-item">
-                    <a href="donate.html" class="nav-link">Donate</a>
-                </li>
-                <li class="nav-item">
-                    <a href="news.html" class="nav-link">News & Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="faqs.html" class="nav-link active">FAQs</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs & Impact</a></li>
+                <li class="nav-item"><a href="involved.html" class="nav-link">Get Involved</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">News & Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -129,7 +115,7 @@
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, all donations to Learn For All Foundation are tax-deductible. We provide official receipts for all donations that you can use for tax purposes.</p>
+                            <p>Yes, all donations to Lift and Serve All Foundation are tax-deductible. We provide official receipts for all donations that you can use for tax purposes.</p>
                         </div>
                     </div>
                 </div>
@@ -305,11 +291,11 @@
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>Is Learn For All Foundation a registered organization?</span>
+                            <span>Is Lift and Serve All Foundation a registered organization?</span>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, Learn For All Foundation is a registered non-profit organization in Ghana. We operate with full legal compliance and maintain all necessary registrations and certifications.</p>
+                            <p>Yes, Lift and Serve All Foundation is a registered non-profit organization. We operate with full legal compliance and maintain all necessary registrations and certifications.</p>
                         </div>
                     </div>
                 </div>
@@ -333,10 +319,10 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <i class="fas fa-book"></i>
-                        <span>Learn For All Foundation</span>
+                        <img src="logo.jpg" alt="Lift and Serve All Foundation Logo" class="footer-logo-img">
+                        <span>Lift and Serve All Foundation</span>
                     </div>
-                    <p>Empowering vulnerable communities through quality education for all.</p>
+                    <p>Transforming the lives of children in underserved communities through education.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -357,7 +343,7 @@
                     <h3>Contact Info</h3>
                     <div class="contact-info">
                         <p><i class="fas fa-phone"></i> +233539427701</p>
-                        <p><i class="fas fa-envelope"></i> info@learnforallfoundation.org</p>
+                        <p><i class="fas fa-envelope"></i> info@liftandserveallfoundation.org</p>
                         <p><i class="fas fa-envelope"></i> emmanuelkelly29@gmail.com</p>
                     </div>
                 </div>
@@ -371,7 +357,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Learn For All Foundation. All rights reserved.</p>
+                <p>&copy; 2024 Lift and Serve All Foundation. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -401,5 +387,19 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+});
+</script>
 </body>
 </html>

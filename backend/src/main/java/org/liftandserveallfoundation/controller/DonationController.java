@@ -1,7 +1,7 @@
-package org.learnforallfoundation.controller;
+package org.liftandserveallfoundation.controller;
 
-import org.learnforallfoundation.model.Donation;
-import org.learnforallfoundation.service.DonationService;
+import org.liftandserveallfoundation.model.Donation;
+import org.liftandserveallfoundation.service.DonationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/donations")
+@RequestMapping("/donations")
 @CrossOrigin(origins = "*")
 public class DonationController {
     

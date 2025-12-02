@@ -1,6 +1,6 @@
-package org.learnforallfoundation.repository;
+package org.liftandserveallfoundation.repository;
 
-import org.learnforallfoundation.model.Donation;
+import org.liftandserveallfoundation.model.Donation;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

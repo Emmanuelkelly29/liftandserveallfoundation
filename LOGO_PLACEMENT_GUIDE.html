@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Placement Guide - Lift and Serve All Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #FFD700;
+        }
+        .file-structure {
+            background: #001F54;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        .highlight {
+            background: #FFD700;
+            color: #001F54;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .logo-preview {
+            background: #001F54;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .logo-placeholder {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        nav.navbar {
+            background: #001F54;
+            padding: 10px 0;
+        }
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-logo img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-item {
+            margin: 0 15px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .bar {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background: #001F54;
+            }
+            .nav-menu.show {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Lift and Serve All Foundation Logo" class="logo-img">
+                </a>
+                <span>Lift and Serve All Foundation</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="programs.html" class="nav-link">Programs & Impact</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>🖼️ Logo Placement Guide</h1>
+        <p>Follow these simple steps to add your logo to the Lift and Serve All Foundation website.</p>
+
+        <div class="step">
+            <h2>Step 1: Prepare Your Logo</h2>
+            <ul>
+                <li>Save your logo as <span class="highlight">logo.png</span></li>
+                <li>Make sure it has a <strong>transparent background</strong></li>
+                <li>Recommended size: 200x200 pixels</li>
+                <li>File format: PNG (for transparency support)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h2>Step 2: Place the Logo File</h2>
+            <p>Put your <span class="highlight">logo.png</span> file in the same folder as your HTML files:</p>
+            
+            <div class="file-structure">
+📁 Your Website Folder<br>
+├── 📄 index.html<br>
+├── 📄 about.html<br>
+├── 📄 contact.html<br>
+├── 📄 styles.css<br>
+├── 📄 script.js<br>
+└── <span class="highlight">🖼️ logo.png</span> ← Place your logo here
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 3: Logo Will Appear Automatically</h2>
+            <p>Once you place the logo file, it will automatically appear in:</p>
+            <ul>
+                <li><strong>Navigation Bar</strong> (top left of every page)</li>
+                <li><strong>Footer</strong> (bottom left of every page)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h2>Step 4: Preview How It Will Look</h2>
+            <p>Here's how your logo will appear in the navigation:</p>
+            
+            <div class="logo-preview">
+                <img src="logo.jpg" alt="Logo Test" style="height: 40px; width: auto; margin-right: 10px;">
+                <div style="margin-top: 10px; font-size: 18px; font-weight: bold;">Lift and Serve All Foundation</div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 5: Test Your Logo</h2>
+            <ol>
+                <li>Open <span class="highlight">index.html</span> in your web browser</li>
+                <li>Check that your logo appears in the top navigation</li>
+                <li>Scroll down to the footer to see it there too</li>
+                <li>Visit other pages to ensure it appears everywhere</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h2>Need Help?</h2>
+            <p>If you don't have a logo yet:</p>
+            <ul>
+                <li>The website will show a placeholder until you add your logo</li>
+                <li>You can add your logo anytime by following these steps</li>
+                <li>Contact us if you need help with logo design</li>
+            </ul>
+        </div>
+
+        <div style="background: #e8f5e8; padding: 20px; border-radius: 8px; margin-top: 30px;">
+            <h3>✅ That's It!</h3>
+            <p>Once you place your <span class="highlight">logo.png</span> file in the correct folder, your logo will automatically appear on all pages of the website. No coding required!</p>
+        </div>
+    </div>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

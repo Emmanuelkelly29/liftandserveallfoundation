@@ -1,6 +1,6 @@
-# Learn For All Foundation Website
+# Lift and Serve All Foundation Website
 
-A comprehensive NGO website for Learn For All Foundation, dedicated to empowering vulnerable communities through quality education.
+A comprehensive NGO website for Lift and Serve All Foundation, dedicated to transforming the lives of children in underserved communities through education.
 
 ## 🌟 Features
 
@@ -77,7 +77,7 @@ A comprehensive NGO website for Learn For All Foundation, dedicated to empowerin
 ## 📁 Project Structure
 
 ```
-learnforallfoundation/
+liftandserveallfoundation/
 ├── index.html              # Homepage
 ├── about.html              # About Us page
 ├── programs.html           # Programs & Impact page
@@ -90,8 +90,8 @@ learnforallfoundation/
 ├── script.js               # JavaScript functionality
 └── backend/                # Spring Boot backend
     ├── src/main/java/
-    │   └── org/learnforallfoundation/
-    │       ├── LearnForAllFoundationApplication.java
+    │   └── org/liftandserveallfoundation/
+    │       ├── LiftAndServeAllFoundationApplication.java
     │       ├── controller/
     │       ├── model/
     │       ├── repository/
@@ -128,7 +128,7 @@ Set the following environment variables for production:
 
 ```bash
 # Database
-DB_URL=jdbc:mysql://localhost:3306/learnforallfoundation
+DB_URL=jdbc:mysql://localhost:3306/liftandserveallfoundation
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 
@@ -204,17 +204,40 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Support
 
 For support and questions:
-- **Email**: info@learnforallfoundation.org
-- **Phone**: +233539427701
-- **Website**: [Learn For All Foundation](https://learnforallfoundation.org)
+- **Email**: michael@liftandservefoundation.com
+- **Phone**: +2348031114594 (Nigeria) | +1 (208) 992-6233 (USA)
+- **Website**: [Lift and Serve All Foundation](https://liftandserveallfoundation.org)
 
 ## 🙏 Acknowledgments
 
 - Font Awesome for icons
 - Google Fonts for typography
 - Spring Boot community for backend framework
-- All contributors and supporters of Learn For All Foundation
+- All contributors and supporters of Lift and Serve All Foundation
 
 ---
 
-**Learn For All Foundation** - Empowering vulnerable communities through quality education for all.
+**Lift and Serve All Foundation** - Transforming the lives of children in underserved communities through education.
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Lift and Serve All Foundation Logo" class="logo-img">
+            </a>
+            <span>Lift and Serve All Foundation</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="programs.html" class="nav-link">Programs & Impact</a></li>
+            <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>

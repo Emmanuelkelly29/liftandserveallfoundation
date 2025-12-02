@@ -8,11 +8,11 @@
         <version>3.2.0</version>
         <relativePath/>
     </parent>
-    <groupId>org.learnforallfoundation</groupId>
-    <artifactId>learn-for-all-foundation</artifactId>
+    <groupId>org.liftandserveallfoundation</groupId>
+    <artifactId>lift-and-serve-all-foundation</artifactId>
     <version>1.0.0</version>
-    <name>Learn For All Foundation</name>
-    <description>NGO website backend for Learn For All Foundation</description>
+    <name>Lift and Serve All Foundation</name>
+    <description>NGO website backend for Lift and Serve All Foundation</description>
     <properties>
         <java.version>17</java.version>
     </properties>

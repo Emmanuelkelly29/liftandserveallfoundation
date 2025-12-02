@@ -1,7 +1,7 @@
-package org.learnforallfoundation.service;
+package org.liftandserveallfoundation.service;
 
-import org.learnforallfoundation.model.Donation;
-import org.learnforallfoundation.repository.DonationRepository;
+import org.liftandserveallfoundation.model.Donation;
+import org.liftandserveallfoundation.repository.DonationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
