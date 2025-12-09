@@ -432,16 +432,17 @@ p {
 
 /* Make the image fill the column width and scale its height by 200% without changing width */
 .team-photo .team-image {
+    /* moderate, responsive sizing: limit width and height to keep image balanced */
     width: 100%;
+    max-width: 480px; /* do not grow beyond this on wide screens */
     height: auto;
-    /* Use cover to fill a taller container without visually overlapping the title */
-    object-fit: cover;
+    object-fit: cover; /* fill the image box while keeping good composition */
     object-position: center center;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     background: #fff;
-    transform: none; /* remove transform-based scaling to avoid overlap */
-    max-height: 520px; /* increase visible height so image appears larger but keeps layout flow */
+    transform: none;
+    max-height: 420px; /* cap height so it stays moderate */
 }
 
 .team-title {
