@@ -398,6 +398,72 @@ p {
     color: #fff !important;
 }
 
+/* About section: ensure image fills width of its column and increase height visually by 200% */
+.about-preview .about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.about-preview .about-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.about-preview .about-image {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible; /* allow vertical expansion when scaled */
+}
+
+.team-photo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px; /* move image down a bit */
+    padding-bottom: 36px; /* ensure space for the title under the image */
+}
+
+/* Make the image fill the column width and scale its height by 200% without changing width */
+.team-photo .team-image {
+    width: 100%;
+    height: auto;
+    /* Use cover to fill a taller container without visually overlapping the title */
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    background: #fff;
+    transform: none; /* remove transform-based scaling to avoid overlap */
+    max-height: 520px; /* increase visible height so image appears larger but keeps layout flow */
+}
+
+.team-title {
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+    /* keep title in normal flow below the image */
+}
+
+/* On small screens revert scaling so the image remains usable */
+@media (max-width: 900px) {
+    .about-preview .about-content {
+        flex-direction: column;
+    }
+    .team-photo .team-image {
+        transform: none;
+        width: 100%;
+        max-height: 500px;
+    }
+}
+
 .cta-buttons .btn:hover,
 .cta-buttons .btn-primary:hover,
 .cta-buttons .btn-secondary:hover,
